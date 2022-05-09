@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BC3593F6282904B700EEFF8F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3593F4282904B700EEFF8F /* CameraViewController.swift */; };
 		BC3593F7282904B700EEFF8F /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3593F5282904B700EEFF8F /* CameraViewController.xib */; };
+		BC3594022829539D00EEFF8F /* yolov2-pipeline.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BC3593FF2829539D00EEFF8F /* yolov2-pipeline.mlmodel */; };
 		BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */; };
 		BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */; };
 		BC9B6E1228221CD200A701C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E1128221CD200A701C8 /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 /* Begin PBXFileReference section */
 		BC3593F4282904B700EEFF8F /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		BC3593F5282904B700EEFF8F /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		BC3593FF2829539D00EEFF8F /* yolov2-pipeline.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov2-pipeline.mlmodel"; sourceTree = "<group>"; };
 		BC9B6E0A28221CD200A701C8 /* CVRecorderSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVRecorderSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				BC9B6E1628221CD400A701C8 /* Assets.xcassets */,
 				BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */,
 				BC9B6E1B28221CD400A701C8 /* Info.plist */,
+				BC3593FF2829539D00EEFF8F /* yolov2-pipeline.mlmodel */,
 			);
 			path = CVRecorderSampleApp;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				BC9B6E1228221CD200A701C8 /* ViewController.swift in Sources */,
 				BC3593F6282904B700EEFF8F /* CameraViewController.swift in Sources */,
 				BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */,
+				BC3594022829539D00EEFF8F /* yolov2-pipeline.mlmodel in Sources */,
 				BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
