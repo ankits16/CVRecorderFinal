@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CVRecorderSampleApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="DuL-tP-wAV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWk-Ip-Ri1">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="8MU-be-f4O">
+                                        <rect key="frame" x="0.0" y="718" width="414" height="100"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6J-lp-tzJ" userLabel="Pause Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tBZ-ob-6pX">
+                                                        <rect key="frame" x="35.5" y="34.5" width="67" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="TDC-uP-3o0"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="pausePressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="kHP-it-43s"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="tBZ-ob-6pX" firstAttribute="centerY" secondItem="c6J-lp-tzJ" secondAttribute="centerY" id="Xmj-jV-64A"/>
+                                                    <constraint firstItem="tBZ-ob-6pX" firstAttribute="centerX" secondItem="c6J-lp-tzJ" secondAttribute="centerX" id="zFe-BO-MZz"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tXh-bH-JLb" userLabel="Start Stop Container">
+                                                <rect key="frame" x="138" y="0.0" width="138" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axa-3Y-KqH">
+                                                        <rect key="frame" x="35.5" y="34.5" width="67" height="31"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="31" id="nNH-N3-Lao"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                        <connections>
+                                                            <action selector="toggleRecording" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJ2-Ye-4Uu"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemMintColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="axa-3Y-KqH" firstAttribute="centerY" secondItem="tXh-bH-JLb" secondAttribute="centerY" id="0FQ-g2-ZtB"/>
+                                                    <constraint firstItem="axa-3Y-KqH" firstAttribute="centerX" secondItem="tXh-bH-JLb" secondAttribute="centerX" id="SU0-x1-Uti"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7k3-na-P1f" userLabel="Change Camera Container">
+                                                <rect key="frame" x="276" y="0.0" width="138" height="100"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZlL-Rw-o9V">
+                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="100"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Psa-QU-0QJ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZF5-dQ-jOW">
+                                                                        <rect key="frame" x="35.5" y="9.5" width="67" height="31"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="31" id="A65-UB-TDN"/>
+                                                                        </constraints>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                                        <connections>
+                                                                            <action selector="changeCameraPresed" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cF-HM-ra0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="ZF5-dQ-jOW" firstAttribute="centerX" secondItem="Psa-QU-0QJ" secondAttribute="centerX" id="Lor-yx-iYY"/>
+                                                                    <constraint firstItem="ZF5-dQ-jOW" firstAttribute="centerY" secondItem="Psa-QU-0QJ" secondAttribute="centerY" id="ZeN-de-CT7"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RP7-ri-75R">
+                                                                <rect key="frame" x="0.0" y="50" width="138" height="50"/>
+                                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="ZlL-Rw-o9V" firstAttribute="top" secondItem="7k3-na-P1f" secondAttribute="top" id="Xyh-lz-Ltq"/>
+                                                    <constraint firstItem="ZlL-Rw-o9V" firstAttribute="leading" secondItem="7k3-na-P1f" secondAttribute="leading" id="YY1-6d-41G"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ZlL-Rw-o9V" secondAttribute="trailing" id="nsF-ww-Kli"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ZlL-Rw-o9V" secondAttribute="bottom" id="va5-we-BRI"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="zhr-e9-Nac"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DuL-tP-wAV" secondAttribute="trailing" id="FY0-7F-6d6"/>
+                            <constraint firstItem="DuL-tP-wAV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ohe-iZ-zqi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DuL-tP-wAV" secondAttribute="bottom" id="w1K-B6-xP4"/>
+                            <constraint firstItem="DuL-tP-wAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zbg-zN-wKw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cameraPreviewContainer" destination="JWk-Ip-Ri1" id="D6d-0C-xA1"/>
+                        <outlet property="changeCamera" destination="ZF5-dQ-jOW" id="vPi-Fn-ZEj"/>
+                        <outlet property="togglePauseResumeButton" destination="tBZ-ob-6pX" id="JWZ-p6-LhP"/>
+                        <outlet property="toggleRecordingButton" destination="axa-3Y-KqH" id="oB1-VT-msy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="84"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
