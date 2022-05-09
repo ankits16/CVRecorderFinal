@@ -14,10 +14,42 @@
             filePath = "../framework/CVRecorder/CVRecorder/Recorder View/VideoEncoder.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "encodeFrame(sampleBuffer:isVideo:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E84FB5A1-FEA0-4D0E-B472-A3AEA0B4FD10 - 926c43d187e4abe3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVRecorder.VideoEncoder.encodeFrame(sampleBuffer: __C.CMSampleBufferRef, isVideo: Swift.Bool) -&gt; Swift.Bool"
+                  moduleName = "CVRecorder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/CVRecorder/Recorder%20View/VideoEncoder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "3040">
+               </Location>
+               <Location
+                  uuid = "E84FB5A1-FEA0-4D0E-B472-A3AEA0B4FD10 - 926c43d187e4ab25"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CVRecorder.VideoEncoder.encodeFrame(sampleBuffer: __C.CMSampleBufferRef, isVideo: Swift.Bool) -&gt; Swift.Bool"
+                  moduleName = "CVRecorder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/CVRecorder/Recorder%20View/VideoEncoder.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
+                  offsetFromSymbolStart = "3000">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

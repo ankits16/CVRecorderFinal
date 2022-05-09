@@ -30,8 +30,8 @@ public class CameraEngine : NSObject{
     private var _lastVideo : CMTime!
     private var _lastAudio : CMTime!
     
-    private var _cx: Int = 0
-    private var _cy : Int = 0
+    private var _parentWidth: Int = 0
+    private var _parentHeight : Int = 0
     
     var _channels :  Int!
     var _sampleRate : Float64!
@@ -86,10 +86,11 @@ public class CameraEngine : NSObject{
                 let videoout = AVCaptureVideoDataOutput()
                 videoout.setSampleBufferDelegate(self, queue: _captureQueue)
                 _session.addOutput(videoout)
+                videoout.connection(with: AVMediaType.video)?.videoOrientation = .portrait
                 _videoConnection = videoout.connection(with: .video)
                 
-                _cx = Int(parentView.bounds.height)
-                _cy = Int(parentView.bounds.width)
+                _parentHeight = Int(parentView.bounds.height)
+                _parentWidth = Int(parentView.bounds.width)
                 
                 let audioout = AVCaptureAudioDataOutput()
                 audioout.setSampleBufferDelegate(self, queue: _captureQueue)
@@ -252,7 +253,13 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
                 //                let path = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(fileName).absoluteString
                 do{
                     
-                    self._encoder = try VideoEncoder(path: path, height: self._cy, width: self._cx, channels: self._channels, samples: self._sampleRate)
+                    self._encoder = try VideoEncoder(
+                        path: path,
+                        height: self._parentHeight,
+                        width: self._parentWidth,
+                        channels: self._channels,
+                        samples: self._sampleRate
+                    )
                 }catch (let error){
                     print("*************** \(error.localizedDescription)")
                     return
