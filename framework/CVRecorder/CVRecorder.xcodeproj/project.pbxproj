@@ -15,6 +15,8 @@
 		BC9B6E492822238F00A701C8 /* CVRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = BC9B6E3B2822238E00A701C8 /* CVRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC9B6E602822244400A701C8 /* CVRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E5F2822244400A701C8 /* CVRecorder.swift */; };
 		BC9B6E66282225C900A701C8 /* CVRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E65282225C900A701C8 /* CVRecorderView.swift */; };
+		BCBC5641282F476800A786EA /* ObjectDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBC5640282F476700A786EA /* ObjectDetection.swift */; };
+		BCBC5644282F495800A786EA /* yolov2-pipeline.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BCBC5643282F495800A786EA /* yolov2-pipeline.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		BC9B6E472822238F00A701C8 /* CVRecorderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRecorderTests.swift; sourceTree = "<group>"; };
 		BC9B6E5F2822244400A701C8 /* CVRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRecorder.swift; sourceTree = "<group>"; };
 		BC9B6E65282225C900A701C8 /* CVRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVRecorderView.swift; sourceTree = "<group>"; };
+		BCBC5640282F476700A786EA /* ObjectDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectDetection.swift; sourceTree = "<group>"; };
+		BCBC5643282F495800A786EA /* yolov2-pipeline.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "yolov2-pipeline.mlmodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 		BC9B6E2E2822238E00A701C8 = {
 			isa = PBXGroup;
 			children = (
+				BCBC5642282F493D00A786EA /* yolo model */,
+				BCBC5639282F46D500A786EA /* ObjectDetection */,
 				BC9B6E3A2822238E00A701C8 /* CVRecorder */,
 				BC9B6E462822238F00A701C8 /* CVRecorderTests */,
 				BC9B6E392822238E00A701C8 /* Products */,
@@ -103,6 +109,22 @@
 				BC3593F22828ECAF00EEFF8F /* CameraEngine.swift */,
 			);
 			path = "Recorder View";
+			sourceTree = "<group>";
+		};
+		BCBC5639282F46D500A786EA /* ObjectDetection */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC5640282F476700A786EA /* ObjectDetection.swift */,
+			);
+			path = ObjectDetection;
+			sourceTree = "<group>";
+		};
+		BCBC5642282F493D00A786EA /* yolo model */ = {
+			isa = PBXGroup;
+			children = (
+				BCBC5643282F495800A786EA /* yolov2-pipeline.mlmodel */,
+			);
+			path = "yolo model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +237,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC3593F12828BFCD00EEFF8F /* VideoEncoder.swift in Sources */,
+				BCBC5644282F495800A786EA /* yolov2-pipeline.mlmodel in Sources */,
 				BC9B6E602822244400A701C8 /* CVRecorder.swift in Sources */,
+				BCBC5641282F476800A786EA /* ObjectDetection.swift in Sources */,
 				BC3593F32828ECAF00EEFF8F /* CameraEngine.swift in Sources */,
 				BC9B6E3D2822238E00A701C8 /* CVRecorder.docc in Sources */,
 				BC9B6E66282225C900A701C8 /* CVRecorderView.swift in Sources */,

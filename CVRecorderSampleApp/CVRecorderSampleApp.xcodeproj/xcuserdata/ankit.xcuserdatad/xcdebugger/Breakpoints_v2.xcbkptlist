@@ -7,61 +7,113 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E84FB5A1-FEA0-4D0E-B472-A3AEA0B4FD10"
+            uuid = "32C53F48-7AE7-4E52-8568-16ADE59A5028"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../framework/CVRecorder/CVRecorder/Recorder View/VideoEncoder.swift"
+            filePath = "CVRecorderSampleApp/CameraViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
-            landmarkName = "encodeFrame(sampleBuffer:isVideo:)"
+            startingLineNumber = "131"
+            endingLineNumber = "131"
+            landmarkName = "toggleDetection(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A4CEA38-0E7C-4C27-BCD2-DD8A5F9EE1B5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "stopDetection()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E84FB5A1-FEA0-4D0E-B472-A3AEA0B4FD10 - 926c43d187e4abe3"
+                  uuid = "8A4CEA38-0E7C-4C27-BCD2-DD8A5F9EE1B5 - 779a501bb7c48ea2"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CVRecorder.VideoEncoder.encodeFrame(sampleBuffer: __C.CMSampleBufferRef, isVideo: Swift.Bool) -&gt; Swift.Bool"
+                  symbolName = "CVRecorder.ObjectDetection.stopDetection() -&gt; ()"
                   moduleName = "CVRecorder"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/CVRecorder/Recorder%20View/VideoEncoder.swift"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "86"
-                  endingLineNumber = "86"
-                  offsetFromSymbolStart = "3040">
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "92">
                </Location>
                <Location
-                  uuid = "E84FB5A1-FEA0-4D0E-B472-A3AEA0B4FD10 - 926c43d187e4ab25"
+                  uuid = "8A4CEA38-0E7C-4C27-BCD2-DD8A5F9EE1B5 - 779a501bb7c48e8d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "CVRecorder.VideoEncoder.encodeFrame(sampleBuffer: __C.CMSampleBufferRef, isVideo: Swift.Bool) -&gt; Swift.Bool"
+                  symbolName = "CVRecorder.ObjectDetection.stopDetection() -&gt; ()"
                   moduleName = "CVRecorder"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/CVRecorder/Recorder%20View/VideoEncoder.swift"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "3000">
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "92">
                </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EF1C7BAA-B5A0-489D-B040-CC6770FEDC31"
-            shouldBeEnabled = "Yes"
+            uuid = "07431B29-3022-4443-B713-4FE95CBC783B"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            breakpointStackSelectionBehavior = "1"
-            scope = "1"
-            stopOnStyle = "0">
+            filePath = "../framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "createObjectDetectionVisionRequest()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "07431B29-3022-4443-B713-4FE95CBC783B - c8c7d7d59e7588db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (__C.VNRequest, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CVRecorder.ObjectDetection.createObjectDetectionVisionRequest() -&gt; Swift.Optional&lt;__C.VNRequest&gt;"
+                  moduleName = "CVRecorder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "07431B29-3022-4443-B713-4FE95CBC783B - c8c7d7d59e7588db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (__C.VNRequest, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CVRecorder.ObjectDetection.createObjectDetectionVisionRequest() -&gt; Swift.Optional&lt;__C.VNRequest&gt;"
+                  moduleName = "CVRecorder"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "116">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

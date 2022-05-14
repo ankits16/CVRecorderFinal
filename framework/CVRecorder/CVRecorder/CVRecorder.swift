@@ -8,6 +8,7 @@
 import UIKit
 import CoreMedia
 import AVFoundation
+import Vision
 
 public protocol CVRecorderDelegate: AnyObject{
     func didChangedCamera(_ currentCameraPosition: AVCaptureDevice.Position)
@@ -81,6 +82,10 @@ extension CVRecorder{
         case .NotReady:
             print("************** Not ready ")
         }
+    }
+    
+    public func toggleDetection(_ shouldStartDetection: Bool){
+        CameraEngine.shared.toggleObjectDetection()
     }
     
 //    public func getCurrentRecorderState() -> RecorderState{

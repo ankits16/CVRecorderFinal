@@ -16,9 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet private weak var toggleRecordingButton : UIButton?
     @IBOutlet private weak var changeCamera : UIButton?
     @IBOutlet private weak var cameraPreviewContainer : UIView?
+    @IBOutlet private weak var cvToggleButton : UIButton?
     
     // private ivars
     private lazy var captureStack : CVRecorder = CVRecorder(delegate: self)
+    private var isObjectDetectionEnabled = false
 //    private lazy var cameraEngine: CameraEngine = CameraEngine(delegate: self)
 
     override func viewDidLoad() {
@@ -134,7 +136,15 @@ extension ViewController{
         captureStack.changeCamera()
     }
     
-    @IBAction func toggleDetection(){}
+    @IBAction func toggleDetection(_ toggleButton: UIButton){
+        isObjectDetectionEnabled = !isObjectDetectionEnabled
+        if isObjectDetectionEnabled{
+            toggleButton.setImage(UIImage(named: "open"), for: .normal)
+        }else{
+            toggleButton.setImage(UIImage(named: "close"), for: .normal)
+        }
+        captureStack.toggleDetection(isObjectDetectionEnabled)
+    }
 }
 
 

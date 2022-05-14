@@ -280,8 +280,6 @@ extension CVRecorderView {
                 self?.sessionAtSourceTime = nil
                 guard let url = self?.videoWriter.outputURL else { return }
                 self?.saveVideoToAlbum(videoUrl: url)
-                let asset = AVURLAsset(url: url)
-                //Do whatever you want with your asset here
             }
         }else{
             print("<<<<<<<<<<< stop() should not be called wen recorder state is \(recorderState)")

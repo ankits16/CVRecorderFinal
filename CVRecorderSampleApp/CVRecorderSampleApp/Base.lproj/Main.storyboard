@@ -97,7 +97,23 @@
                                                             </view>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RP7-ri-75R">
                                                                 <rect key="frame" x="0.0" y="50" width="138" height="50"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mB-Yj-dhC">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
+                                                                        <state key="normal" title="Button"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="close"/>
+                                                                        <connections>
+                                                                            <action selector="toggleDetection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wex-V5-2yc"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
                                                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="4mB-Yj-dhC" secondAttribute="bottom" id="CPW-24-fBw"/>
+                                                                    <constraint firstItem="4mB-Yj-dhC" firstAttribute="top" secondItem="RP7-ri-75R" secondAttribute="top" id="K1F-1i-2U9"/>
+                                                                    <constraint firstItem="4mB-Yj-dhC" firstAttribute="leading" secondItem="RP7-ri-75R" secondAttribute="leading" id="W4h-ML-myS"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="4mB-Yj-dhC" secondAttribute="trailing" id="scd-AO-6oW"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                     </stackView>
@@ -130,6 +146,7 @@
                     <connections>
                         <outlet property="cameraPreviewContainer" destination="JWk-Ip-Ri1" id="D6d-0C-xA1"/>
                         <outlet property="changeCamera" destination="ZF5-dQ-jOW" id="vPi-Fn-ZEj"/>
+                        <outlet property="cvToggleButton" destination="4mB-Yj-dhC" id="yNd-rL-w7R"/>
                         <outlet property="togglePauseResumeButton" destination="tBZ-ob-6pX" id="JWZ-p6-LhP"/>
                         <outlet property="toggleRecordingButton" destination="axa-3Y-KqH" id="oB1-VT-msy"/>
                     </connections>
@@ -140,6 +157,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="close" width="70" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

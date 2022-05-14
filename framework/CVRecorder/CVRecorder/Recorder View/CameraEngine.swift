@@ -9,6 +9,8 @@ import UIKit
 import AVFoundation
 import AssetsLibrary
 import Photos
+import Vision
+
 
 public class CameraEngine : NSObject{
     
@@ -41,6 +43,9 @@ public class CameraEngine : NSObject{
     //    public init(delegate: CVRecorderDelegate){
     //        self.delegate = delegate
     //    }
+    
+    var objectDetection: ObjectDetection!
+    var visionRequests : [VNRequest]? = []
     
     private func cameraWithPosition(position: AVCaptureDevice.Position) -> AVCaptureDevice? {
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: AVMediaType.video, position: .unspecified)
@@ -113,6 +118,33 @@ public class CameraEngine : NSObject{
         }
     }
     
+    private var isObjectDetectionOn = false
+    
+    public func toggleObjectDetection(){
+        _captureQueue.sync {
+            isObjectDetectionOn =  !isObjectDetectionOn
+            if isObjectDetectionOn{
+                if self.objectDetection == nil{
+                    self.objectDetection = ObjectDetection(
+                        cameraLayer: getPreviewLayr(),
+                        videoFrameSize: getPreviewLayr().bounds.size
+                    )
+                }
+                if let unwrappedVisionRequest = self.objectDetection.createObjectDetectionVisionRequest(){
+                    self.visionRequests = [unwrappedVisionRequest]
+                }else{
+                    self.visionRequests = []
+                }
+                objectDetection.startDetection()
+                
+            }else{
+                objectDetection.stopDetection()
+            }
+        }
+    }
+    
+   
+    
     public func startCapture(){
         _captureQueue.sync {
             if(!self.isCapturing){
@@ -142,26 +174,6 @@ public class CameraEngine : NSObject{
                         DispatchQueue.main.async {
                             self.isCapturing = false
                             self._encoder = nil
-                            //write to library
-                            //                            guard let url = self?._.outputURL else { return }
-                            //                            self.saveVideoToAlbum(videoUrl: path)
-                            //                            let library = ALAssetsLibrary()
-                            /*library.writeVideoAtPath(toSavedPhotosAlbum: path) { assetUrl, error in
-                             if let unwrappedurl = assetUrl{
-                             do{
-                             try FileManager.default.removeItem(at: unwrappedurl)
-                             }catch (let error){
-                             print("<<<<<<<<<<<  error while removing  in stopCapturing() - \(error.localizedDescription)")
-                             }
-                             
-                             }else{
-                             if let unwrappedError = error{
-                             print("<<<<<<<<<<<  error in stopCapturing() - \(unwrappedError.localizedDescription)")
-                             }else{
-                             print("<<<<<<<<<<< unknown error in stopCapturing()")
-                             }
-                             }
-                             }*/
                         }
                     }
                 }
@@ -241,10 +253,14 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
             //        _captureQueue.sync {
             
             var _sampleBuffer = sampleBuffer
+            bVideo = connection == self._videoConnection
+            if isObjectDetectionOn && bVideo{
+                self.performObjectDetection(sampleBuffer: sampleBuffer)
+            }
             if(!self.isCapturing || self.isPaused){
                 return
             }
-            bVideo = connection == self._videoConnection
+            
             if(self._encoder == nil && !bVideo){
                 let fmt = CMSampleBufferGetFormatDescription(_sampleBuffer) as! CMFormatDescription
                 self.setAudioFormat(fmt: fmt)
@@ -322,7 +338,24 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
             }
             
         }
+    }
+    
+    private func performObjectDetection(sampleBuffer: CMSampleBuffer){
         
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            return
+        }
+        if !isObjectDetectionOn{
+            return
+        }
+        // We are using fixed "up" orientation here
+        let frameOrientation: CGImagePropertyOrientation = .up
         
+        let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer, orientation: frameOrientation, options: [:])
+        do {
+            try imageRequestHandler.perform(self.visionRequests!)
+        } catch {
+            print(error)
+        }
     }
 }
