@@ -7,6 +7,9 @@ This repository showcase following things:-
 - [ ] Code clean up: Proper state management
 - [ ] Concurrency Proper queue management
 
+![ScreenShot](https://github.com/ankits16/CVRecorderFinal/blob/main/sample%20images/IMG_3427.PNG)
+![ScreenShot](https://github.com/ankits16/CVRecorderFinal/blob/main/sample%20images/IMG_3428.PNG)
+
 
 
 # References
