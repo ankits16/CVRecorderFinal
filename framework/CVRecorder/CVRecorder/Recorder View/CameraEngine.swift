@@ -21,6 +21,7 @@ public class CameraEngine : NSObject{
     private var _preview : AVCaptureVideoPreviewLayer!
     private var _captureQueue : DispatchQueue!
     private let serialQueue = DispatchQueue(label: "com.test.mySerialQueue")
+    private let _detectorSerialQueue = DispatchQueue(label: "com.test.objectDetectorSerialQueue")
     private var _audioConnection : AVCaptureConnection!
     private var _videoConnection : AVCaptureConnection!
     private var _encoder : VideoEncoder!
@@ -255,7 +256,9 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
             var _sampleBuffer = sampleBuffer
             bVideo = connection == self._videoConnection
             if isObjectDetectionOn && bVideo{
-                self.performObjectDetection(sampleBuffer: sampleBuffer)
+                _detectorSerialQueue.sync {
+                    self.performObjectDetection(sampleBuffer: sampleBuffer)
+                }
             }
             if(!self.isCapturing || self.isPaused){
                 return
