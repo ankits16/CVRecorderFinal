@@ -91,9 +91,18 @@ public class CameraEngine : NSObject{
                 _captureQueue = DispatchQueue(label: "com.cvcamrecorder.record-video.data-output")
                 let videoout = AVCaptureVideoDataOutput()
                 videoout.setSampleBufferDelegate(self, queue: _captureQueue)
+                let settings: [String : Any] = [
+                  kCVPixelBufferPixelFormatTypeKey as String: NSNumber(value: kCVPixelFormatType_32BGRA)
+                ]
+
+                videoout.videoSettings = settings
+                videoout.alwaysDiscardsLateVideoFrames = true
                 _session.addOutput(videoout)
                 videoout.connection(with: AVMediaType.video)?.videoOrientation = .portrait
                 _videoConnection = videoout.connection(with: .video)
+                if _videoConnection.isVideoStabilizationSupported{
+                    _videoConnection.preferredVideoStabilizationMode = .auto
+                }
                 
                 _parentHeight = Int(parentView.bounds.height)
                 _parentWidth = Int(parentView.bounds.width)
@@ -122,7 +131,7 @@ public class CameraEngine : NSObject{
     private var isObjectDetectionOn = false
     
     public func toggleObjectDetection(){
-        _captureQueue.sync {
+        _detectorSerialQueue.sync {
             isObjectDetectionOn =  !isObjectDetectionOn
             if isObjectDetectionOn{
                 if self.objectDetection == nil{
@@ -345,7 +354,7 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
     
     private func performObjectDetection(sampleBuffer: CMSampleBuffer){
         
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+        guard let pixelBuffer = sampleBuffer.resize(CGSize(width: _parentWidth, height: _parentHeight)) /*CMSampleBufferGetImageBuffer(sampleBuffer)*/ else {
             return
         }
         if !isObjectDetectionOn{
@@ -360,5 +369,33 @@ extension CameraEngine : AVCaptureAudioDataOutputSampleBufferDelegate, AVCapture
         } catch {
             print(error)
         }
+    }
+}
+
+
+extension CMSampleBuffer{
+    func resize(_ destSize: CGSize)-> CVPixelBuffer? {
+        guard let imageBuffer = CMSampleBufferGetImageBuffer(self) else { return nil }
+        // Lock the image buffer
+        CVPixelBufferLockBaseAddress(imageBuffer, CVPixelBufferLockFlags(rawValue: 0))
+        // Get information about the image
+        let baseAddress = CVPixelBufferGetBaseAddress(imageBuffer)
+        let bytesPerRow = CGFloat(CVPixelBufferGetBytesPerRow(imageBuffer))
+        let height = CGFloat(CVPixelBufferGetHeight(imageBuffer))
+        let width = CGFloat(CVPixelBufferGetWidth(imageBuffer))
+        var pixelBuffer: CVPixelBuffer?
+        let options = [kCVPixelBufferCGImageCompatibilityKey:true,
+               kCVPixelBufferCGBitmapContextCompatibilityKey:true]
+        let topMargin = (height - destSize.height) / CGFloat(2)
+        let leftMargin = (width - destSize.width) * CGFloat(2)
+        let baseAddressStart = Int(bytesPerRow * topMargin + leftMargin)
+        let addressPoint = baseAddress!.assumingMemoryBound(to: UInt8.self)
+        let status = CVPixelBufferCreateWithBytes(kCFAllocatorDefault, Int(destSize.width), Int(destSize.height), kCVPixelFormatType_32BGRA, &addressPoint[baseAddressStart], Int(bytesPerRow), nil, nil, options as CFDictionary, &pixelBuffer)
+        if (status != 0) {
+            print(status)
+            return nil;
+        }
+        CVPixelBufferUnlockBaseAddress(imageBuffer,CVPixelBufferLockFlags(rawValue: 0))
+        return pixelBuffer;
     }
 }

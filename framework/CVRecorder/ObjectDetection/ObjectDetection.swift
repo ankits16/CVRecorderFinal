@@ -37,7 +37,7 @@ public class ObjectDetection{
                 })
             })
 
-            objectRecognition.imageCropAndScaleOption = .scaleFill
+            objectRecognition.imageCropAndScaleOption = .scaleFit
             return objectRecognition
         } catch let error as NSError {
             print("Model loading error: \(error)")

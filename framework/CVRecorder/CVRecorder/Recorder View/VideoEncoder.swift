@@ -36,6 +36,7 @@ class VideoEncoder {
                     AVVideoAverageBitRateKey: 2300000,
                 ],
             ])
+        
             _videoInput.expectsMediaDataInRealTime = true
             if _writer.canAdd(_videoInput) {
                 _writer.add(_videoInput)
