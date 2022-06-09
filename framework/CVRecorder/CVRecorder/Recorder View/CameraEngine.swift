@@ -71,7 +71,7 @@ public class CameraEngine : NSObject{
             
             //create capture device with video
             _session = AVCaptureSession()
-            _session.sessionPreset = AVCaptureSession.Preset.hd1280x720
+            _session.sessionPreset = AVCaptureSession.Preset.vga640x480
             let cameraDevice = cameraWithPosition(position: devicePosition)
             //Setup your microphone
             let audioDevice = AVCaptureDevice.default(for: AVMediaType.audio)
