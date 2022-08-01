@@ -18,7 +18,7 @@ public class ObjectDetection{
     
     private var stopDrawing = false
     
-    init (cameraLayer: CALayer, videoFrameSize: CGSize){
+    public init (cameraLayer: CALayer, videoFrameSize: CGSize){
         self.cameraLayer = cameraLayer
         self.videoFrameSize = videoFrameSize
         setupObjectDetectionLayer(cameraLayer, videoFrameSize)
@@ -37,7 +37,7 @@ public class ObjectDetection{
                 })
             })
 
-            objectRecognition.imageCropAndScaleOption = .scaleFill
+            objectRecognition.imageCropAndScaleOption = .scaleFit
             return objectRecognition
         } catch let error as NSError {
             print("Model loading error: \(error)")
@@ -45,11 +45,11 @@ public class ObjectDetection{
         }
     }
     
-    func startDetection(){
+    public func startDetection(){
         stopDrawing = false
     }
     
-    func stopDetection(){
+    public func stopDetection(){
         
         self.objectDetectionLayer.sublayers = nil
         print("-------------- stopDetection()")

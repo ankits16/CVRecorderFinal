@@ -30,12 +30,14 @@ class VideoEncoder {
             //Add video input
             _videoInput = AVAssetWriterInput(mediaType: AVMediaType.video, outputSettings: [
                 AVVideoCodecKey: AVVideoCodecType.h264,
-                AVVideoWidthKey: width,
-                AVVideoHeightKey: height,
+                AVVideoWidthKey: CGFloat(640),
+                AVVideoHeightKey: CGFloat(480),
                 AVVideoCompressionPropertiesKey: [
                     AVVideoAverageBitRateKey: 2300000,
                 ],
+                AVVideoScalingModeKey : AVVideoScalingModeResizeAspectFill as AnyObject
             ])
+        
             _videoInput.expectsMediaDataInRealTime = true
             if _writer.canAdd(_videoInput) {
                 _writer.add(_videoInput)

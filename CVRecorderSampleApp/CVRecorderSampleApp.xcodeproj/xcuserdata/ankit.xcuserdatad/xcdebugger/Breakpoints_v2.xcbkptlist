@@ -30,42 +30,10 @@
             filePath = "../framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "stopDetection()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "8A4CEA38-0E7C-4C27-BCD2-DD8A5F9EE1B5 - 779a501bb7c48ea2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CVRecorder.ObjectDetection.stopDetection() -&gt; ()"
-                  moduleName = "CVRecorder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "51"
-                  endingLineNumber = "51"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  uuid = "8A4CEA38-0E7C-4C27-BCD2-DD8A5F9EE1B5 - 779a501bb7c48e8d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CVRecorder.ObjectDetection.stopDetection() -&gt; ()"
-                  moduleName = "CVRecorder"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ankit/Documents/code/iOS/learn/CVRecorder/framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "50"
-                  endingLineNumber = "50"
-                  offsetFromSymbolStart = "92">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -78,8 +46,8 @@
             filePath = "../framework/CVRecorder/ObjectDetection/ObjectDetection.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "createObjectDetectionVisionRequest()"
             landmarkType = "7">
             <Locations>
