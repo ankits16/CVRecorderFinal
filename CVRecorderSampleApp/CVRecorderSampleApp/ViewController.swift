@@ -169,3 +169,10 @@ extension ViewController: CVRecorderDelegate{
         changeControlStates(currentRecorderState)
     }
 }
+
+extension ViewController{
+    @IBAction func navigateToPlayerScreen(){
+        let playerVc = VideoPlayerViewController(nibName: "VideoPlayerViewController", bundle: nil)
+        self.navigationController?.pushViewController(playerVc, animated: true)
+    }
+}
