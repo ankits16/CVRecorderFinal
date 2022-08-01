@@ -15,6 +15,8 @@
 		BC9B6E1A28221CD400A701C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */; };
 		BC9B6E61282224C600A701C8 /* CVRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9B6E58282223C800A701C8 /* CVRecorder.framework */; };
 		BC9B6E62282224C600A701C8 /* CVRecorder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9B6E58282223C800A701C8 /* CVRecorder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCC3CFCB28509D1900633A5C /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */; };
+		BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		BC9B6E1928221CD400A701C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC9B6E1B28221CD400A701C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9B6E52282223C800A701C8 /* CVRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CVRecorder.xcodeproj; path = ../../framework/CVRecorder/CVRecorder.xcodeproj; sourceTree = "<group>"; };
+		BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 				BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */,
 				BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */,
 				BC9B6E1128221CD200A701C8 /* ViewController.swift */,
+				BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */,
+				BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */,
 				BC9B6E1328221CD200A701C8 /* Main.storyboard */,
 				BC9B6E1628221CD400A701C8 /* Assets.xcassets */,
 				BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */,
@@ -203,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9B6E1A28221CD400A701C8 /* LaunchScreen.storyboard in Resources */,
+				BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */,
 				BC9B6E1728221CD400A701C8 /* Assets.xcassets in Resources */,
 				BC9B6E1528221CD200A701C8 /* Main.storyboard in Resources */,
 			);
@@ -216,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9B6E1228221CD200A701C8 /* ViewController.swift in Sources */,
+				BCC3CFCB28509D1900633A5C /* VideoPlayerViewController.swift in Sources */,
 				BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */,
 				BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */,
 			);
