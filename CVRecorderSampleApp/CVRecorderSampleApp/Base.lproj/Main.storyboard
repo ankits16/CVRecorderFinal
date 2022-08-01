@@ -48,17 +48,6 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-ad-I2w">
                                         <rect key="frame" x="0.0" y="624" width="414" height="50"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnm-E4-3nO">
-                                                <rect key="frame" x="292" y="8" width="92" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Play Video"/>
-                                                <connections>
-                                                    <action selector="navigateToPlayerScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Oa-7v-OhR"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="mtw-5O-JiA"/>
@@ -184,11 +173,24 @@
                             <constraint firstItem="DuL-tP-wAV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="zbg-zN-wKw"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dPo-IP-FzQ"/>
+                    <navigationItem key="navigationItem" id="dPo-IP-FzQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="fD7-SW-2Pi">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="WZP-aL-SP0">
+                                <rect key="frame" x="302" y="5" width="92" height="34.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Menu"/>
+                                <connections>
+                                    <action selector="menuButtonTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="MO6-ca-Xee"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="cameraPreviewContainer" destination="JWk-Ip-Ri1" id="D6d-0C-xA1"/>
                         <outlet property="changeCamera" destination="ZF5-dQ-jOW" id="vPi-Fn-ZEj"/>
                         <outlet property="cvToggleButton" destination="4mB-Yj-dhC" id="yNd-rL-w7R"/>
+                        <outlet property="menuButton" destination="WZP-aL-SP0" id="12o-5A-3fo"/>
                         <outlet property="togglePauseResumeButton" destination="tBZ-ob-6pX" id="JWZ-p6-LhP"/>
                         <outlet property="toggleRecordingButton" destination="axa-3Y-KqH" id="oB1-VT-msy"/>
                     </connections>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8BE466C1041BE7D37A81305E /* Pods_CVRecorderSampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CDC2E5AB59526F195AF98E1 /* Pods_CVRecorderSampleApp.framework */; };
 		BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */; };
 		BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */; };
 		BC9B6E1228221CD200A701C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9B6E1128221CD200A701C8 /* ViewController.swift */; };
@@ -15,6 +16,10 @@
 		BC9B6E1A28221CD400A701C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */; };
 		BC9B6E61282224C600A701C8 /* CVRecorder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC9B6E58282223C800A701C8 /* CVRecorder.framework */; };
 		BC9B6E62282224C600A701C8 /* CVRecorder.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC9B6E58282223C800A701C8 /* CVRecorder.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BCBB9DF42897E21900EF5635 /* ExperimentsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB9DF22897E21900EF5635 /* ExperimentsMenuViewController.swift */; };
+		BCBB9DF52897E21900EF5635 /* ExperimentsMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB9DF32897E21900EF5635 /* ExperimentsMenuViewController.xib */; };
+		BCBB9DF92897E44000EF5635 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB9DF72897E44000EF5635 /* MenuTableViewCell.swift */; };
+		BCBB9DFA2897E44000EF5635 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */; };
 		BCC3CFCB28509D1900633A5C /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */; };
 		BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1E40461B46CD4AFF8695B73B /* Pods-CVRecorderSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVRecorderSampleApp.release.xcconfig"; path = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		7CDC2E5AB59526F195AF98E1 /* Pods_CVRecorderSampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVRecorderSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D58114579EDCD6BDE907B96 /* Pods-CVRecorderSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVRecorderSampleApp.debug.xcconfig"; path = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BC9B6E0A28221CD200A701C8 /* CVRecorderSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVRecorderSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +68,10 @@
 		BC9B6E1928221CD400A701C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC9B6E1B28221CD400A701C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC9B6E52282223C800A701C8 /* CVRecorder.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CVRecorder.xcodeproj; path = ../../framework/CVRecorder/CVRecorder.xcodeproj; sourceTree = "<group>"; };
+		BCBB9DF22897E21900EF5635 /* ExperimentsMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperimentsMenuViewController.swift; sourceTree = "<group>"; };
+		BCBB9DF32897E21900EF5635 /* ExperimentsMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperimentsMenuViewController.xib; sourceTree = "<group>"; };
+		BCBB9DF72897E44000EF5635 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,18 +82,29 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC9B6E61282224C600A701C8 /* CVRecorder.framework in Frameworks */,
+				8BE466C1041BE7D37A81305E /* Pods_CVRecorderSampleApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		896212137C3A4DDA7E0B811A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D58114579EDCD6BDE907B96 /* Pods-CVRecorderSampleApp.debug.xcconfig */,
+				1E40461B46CD4AFF8695B73B /* Pods-CVRecorderSampleApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BC9B6E0128221CD200A701C8 = {
 			isa = PBXGroup;
 			children = (
 				BC9B6E0C28221CD200A701C8 /* CVRecorderSampleApp */,
 				BC9B6E0B28221CD200A701C8 /* Products */,
 				BC9B6E2A282221CB00A701C8 /* Frameworks */,
+				896212137C3A4DDA7E0B811A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +119,7 @@
 		BC9B6E0C28221CD200A701C8 /* CVRecorderSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCBB9DEF2897E20700EF5635 /* Menu */,
 				BC9B6E52282223C800A701C8 /* CVRecorder.xcodeproj */,
 				BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */,
 				BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */,
@@ -113,6 +137,7 @@
 		BC9B6E2A282221CB00A701C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7CDC2E5AB59526F195AF98E1 /* Pods_CVRecorderSampleApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -126,6 +151,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		BCBB9DEF2897E20700EF5635 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB9DF62897E42B00EF5635 /* Custom Cell */,
+				BCBB9DF22897E21900EF5635 /* ExperimentsMenuViewController.swift */,
+				BCBB9DF32897E21900EF5635 /* ExperimentsMenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		BCBB9DF62897E42B00EF5635 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB9DF72897E44000EF5635 /* MenuTableViewCell.swift */,
+				BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,10 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC9B6E1E28221CD400A701C8 /* Build configuration list for PBXNativeTarget "CVRecorderSampleApp" */;
 			buildPhases = (
+				0A527F4B2766DD00BDE34A4E /* [CP] Check Pods Manifest.lock */,
 				BC9B6E0628221CD200A701C8 /* Sources */,
 				BC9B6E0728221CD200A701C8 /* Frameworks */,
 				BC9B6E0828221CD200A701C8 /* Resources */,
 				BC9B6E63282224C600A701C8 /* Embed Frameworks */,
+				A91B2741D2070BF1D41F4F94 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBB9DFA2897E44000EF5635 /* MenuTableViewCell.xib in Resources */,
 				BC9B6E1A28221CD400A701C8 /* LaunchScreen.storyboard in Resources */,
+				BCBB9DF52897E21900EF5635 /* ExperimentsMenuViewController.xib in Resources */,
 				BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */,
 				BC9B6E1728221CD400A701C8 /* Assets.xcassets in Resources */,
 				BC9B6E1528221CD200A701C8 /* Main.storyboard in Resources */,
@@ -217,6 +265,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A527F4B2766DD00BDE34A4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVRecorderSampleApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91B2741D2070BF1D41F4F94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BC9B6E0628221CD200A701C8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -224,7 +314,9 @@
 			files = (
 				BC9B6E1228221CD200A701C8 /* ViewController.swift in Sources */,
 				BCC3CFCB28509D1900633A5C /* VideoPlayerViewController.swift in Sources */,
+				BCBB9DF92897E44000EF5635 /* MenuTableViewCell.swift in Sources */,
 				BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */,
+				BCBB9DF42897E21900EF5635 /* ExperimentsMenuViewController.swift in Sources */,
 				BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,6 +459,7 @@
 		};
 		BC9B6E1F28221CD400A701C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D58114579EDCD6BDE907B96 /* Pods-CVRecorderSampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -399,6 +492,7 @@
 		};
 		BC9B6E2028221CD400A701C8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E40461B46CD4AFF8695B73B /* Pods-CVRecorderSampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

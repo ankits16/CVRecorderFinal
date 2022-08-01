@@ -12,6 +12,12 @@ import MediaPlayer
 import Vision
 import CVRecorder
 
+/**
+ References :
+ 
+ https://stackoverflow.com/questions/39551459/ios-avplayer-getting-a-snapshot-of-the-current-frame-of-a-video/39553034#39553034
+ https://stackoverflow.com/a/67917995/195504
+ */
 
 class VideoPlayerViewController: UIViewController {
     
@@ -217,9 +223,4 @@ extension VideoPlayerViewController{
 }
 
 
-/**
- References :
- 
- https://stackoverflow.com/questions/39551459/ios-avplayer-getting-a-snapshot-of-the-current-frame-of-a-video/39553034#39553034
- https://stackoverflow.com/a/67917995/195504
- */
+

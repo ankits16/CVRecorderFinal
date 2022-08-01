@@ -1,0 +1,610 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0FEDC3F489566DEC04BE0A285659A13B /* Pods-CVRecorderSampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 440BBEF4A9BA50001906BE262F2606C7 /* Pods-CVRecorderSampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		358870589BC0901B2AF20EC511B1BECD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6256E23556444D7DAB8DF747FE81DBEF /* Pods-CVRecorderSampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 368DB976B46EDA195BFD65106ACAEDE2 /* Pods-CVRecorderSampleApp-dummy.m */; };
+		681910D4C57D0AD3C01B995D29435548 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		782A94DBE26D71EF2EEF82E48CEAB647 /* KUIPopOver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD0C80D8D0D79F8FB32E779DA3B46A0 /* KUIPopOver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7B126566D8579DC0963AB4A4BE15B1DC /* KUIPopOver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3EABBD777F5465EC521D9DEED4B8C6 /* KUIPopOver-dummy.m */; };
+		94B3A77250467DF903F2FEE47644CE89 /* KUIPopOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AAB41B0EFD6E23F1AAB0812FDB9400 /* KUIPopOver.swift */; };
+		D90B493FD9BC461A80E6AD8FC3536036 /* KUIPopOverUsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877F7E0D4330E62272F76EFD437440F4 /* KUIPopOverUsable.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A7A5AAA2A506B7ED5D4E76D3B4E5FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB0594AB3C9985EE48857D269BED2295;
+			remoteInfo = KUIPopOver;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188DA01C35A18016212DCB8EDEFC095D /* Pods-CVRecorderSampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVRecorderSampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E6019D2CB2071AFD037BD4CBF7DDDA8 /* KUIPopOver-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KUIPopOver-Info.plist"; sourceTree = "<group>"; };
+		363CAC1442B90E76D0C5728B3C717C4C /* Pods-CVRecorderSampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CVRecorderSampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		368DB976B46EDA195BFD65106ACAEDE2 /* Pods-CVRecorderSampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CVRecorderSampleApp-dummy.m"; sourceTree = "<group>"; };
+		39503D818F892D17FD13BFBE353E83A6 /* Pods-CVRecorderSampleApp-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CVRecorderSampleApp-Info.plist"; sourceTree = "<group>"; };
+		3C8241E7221568A1ED3A64F98DDCC71F /* KUIPopOver.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KUIPopOver.debug.xcconfig; sourceTree = "<group>"; };
+		440BBEF4A9BA50001906BE262F2606C7 /* Pods-CVRecorderSampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CVRecorderSampleApp-umbrella.h"; sourceTree = "<group>"; };
+		58AAB41B0EFD6E23F1AAB0812FDB9400 /* KUIPopOver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KUIPopOver.swift; path = KUIPopOver/Classes/KUIPopOver.swift; sourceTree = "<group>"; };
+		6E7D89BD73B8F45D23D29300602E3E8F /* Pods-CVRecorderSampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CVRecorderSampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7C7684064F9ABF89901AB3A6EA12C279 /* KUIPopOver */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KUIPopOver; path = KUIPopOver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		877F7E0D4330E62272F76EFD437440F4 /* KUIPopOverUsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KUIPopOverUsable.swift; path = KUIPopOver/Classes/KUIPopOverUsable.swift; sourceTree = "<group>"; };
+		911E265627C22DF9FEF9F0F369FE8308 /* KUIPopOver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KUIPopOver.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EBD628167161AF9592588D1EDFF1DE8 /* Pods-CVRecorderSampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CVRecorderSampleApp.modulemap"; sourceTree = "<group>"; };
+		A1DC4ED71E5BCA60645B9CE0CD735696 /* KUIPopOver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KUIPopOver.release.xcconfig; sourceTree = "<group>"; };
+		BBBCFF577E8378B640C247BD3AC3F4EE /* Pods-CVRecorderSampleApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-CVRecorderSampleApp"; path = Pods_CVRecorderSampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC478E5D284E7FEB1B01DB95BE83025 /* Pods-CVRecorderSampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CVRecorderSampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BFD0C80D8D0D79F8FB32E779DA3B46A0 /* KUIPopOver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KUIPopOver-umbrella.h"; sourceTree = "<group>"; };
+		C7600C3BC4C27E6A783263132155DD4B /* Pods-CVRecorderSampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CVRecorderSampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		DC3EABBD777F5465EC521D9DEED4B8C6 /* KUIPopOver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KUIPopOver-dummy.m"; sourceTree = "<group>"; };
+		EF8C489A6025D6921BB8CA88B131EF3B /* KUIPopOver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KUIPopOver-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		412D561FCF1073C20DC722C51A636FE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				681910D4C57D0AD3C01B995D29435548 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD24421E6E0AE2019EFDE0C22A54E641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358870589BC0901B2AF20EC511B1BECD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B96D7DD4E95AADA62450043FA20736A /* Pods-CVRecorderSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				9EBD628167161AF9592588D1EDFF1DE8 /* Pods-CVRecorderSampleApp.modulemap */,
+				363CAC1442B90E76D0C5728B3C717C4C /* Pods-CVRecorderSampleApp-acknowledgements.markdown */,
+				188DA01C35A18016212DCB8EDEFC095D /* Pods-CVRecorderSampleApp-acknowledgements.plist */,
+				368DB976B46EDA195BFD65106ACAEDE2 /* Pods-CVRecorderSampleApp-dummy.m */,
+				C7600C3BC4C27E6A783263132155DD4B /* Pods-CVRecorderSampleApp-frameworks.sh */,
+				39503D818F892D17FD13BFBE353E83A6 /* Pods-CVRecorderSampleApp-Info.plist */,
+				440BBEF4A9BA50001906BE262F2606C7 /* Pods-CVRecorderSampleApp-umbrella.h */,
+				BEC478E5D284E7FEB1B01DB95BE83025 /* Pods-CVRecorderSampleApp.debug.xcconfig */,
+				6E7D89BD73B8F45D23D29300602E3E8F /* Pods-CVRecorderSampleApp.release.xcconfig */,
+			);
+			name = "Pods-CVRecorderSampleApp";
+			path = "Target Support Files/Pods-CVRecorderSampleApp";
+			sourceTree = "<group>";
+		};
+		21C6855B709BA51AF5693B00D87ABDCD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				911E265627C22DF9FEF9F0F369FE8308 /* KUIPopOver.modulemap */,
+				DC3EABBD777F5465EC521D9DEED4B8C6 /* KUIPopOver-dummy.m */,
+				2E6019D2CB2071AFD037BD4CBF7DDDA8 /* KUIPopOver-Info.plist */,
+				EF8C489A6025D6921BB8CA88B131EF3B /* KUIPopOver-prefix.pch */,
+				BFD0C80D8D0D79F8FB32E779DA3B46A0 /* KUIPopOver-umbrella.h */,
+				3C8241E7221568A1ED3A64F98DDCC71F /* KUIPopOver.debug.xcconfig */,
+				A1DC4ED71E5BCA60645B9CE0CD735696 /* KUIPopOver.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KUIPopOver";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		64B6E47D0B835BF94518A801A161C6B2 /* KUIPopOver */ = {
+			isa = PBXGroup;
+			children = (
+				58AAB41B0EFD6E23F1AAB0812FDB9400 /* KUIPopOver.swift */,
+				877F7E0D4330E62272F76EFD437440F4 /* KUIPopOverUsable.swift */,
+				21C6855B709BA51AF5693B00D87ABDCD /* Support Files */,
+			);
+			name = KUIPopOver;
+			path = KUIPopOver;
+			sourceTree = "<group>";
+		};
+		71F46B5A5F9F8EA53BC6D507391C349E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B96D7DD4E95AADA62450043FA20736A /* Pods-CVRecorderSampleApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A19FBBA264504BCC1EC8FC530CFA67DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C7684064F9ABF89901AB3A6EA12C279 /* KUIPopOver */,
+				BBBCFF577E8378B640C247BD3AC3F4EE /* Pods-CVRecorderSampleApp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D95E1461B4DC8DA6613CD2FAAB3D1B26 /* Pods */,
+				A19FBBA264504BCC1EC8FC530CFA67DD /* Products */,
+				71F46B5A5F9F8EA53BC6D507391C349E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D95E1461B4DC8DA6613CD2FAAB3D1B26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64B6E47D0B835BF94518A801A161C6B2 /* KUIPopOver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		280DD54CC9BFF6A4294482FC83E42F81 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				782A94DBE26D71EF2EEF82E48CEAB647 /* KUIPopOver-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A80B25B218FED0AEEDD3E4343D6270ED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FEDC3F489566DEC04BE0A285659A13B /* Pods-CVRecorderSampleApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		AB0594AB3C9985EE48857D269BED2295 /* KUIPopOver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE76B095FF269B250639CEC8A632AA18 /* Build configuration list for PBXNativeTarget "KUIPopOver" */;
+			buildPhases = (
+				280DD54CC9BFF6A4294482FC83E42F81 /* Headers */,
+				C17E1054320A9DF4393C65C42BAB1FFF /* Sources */,
+				412D561FCF1073C20DC722C51A636FE5 /* Frameworks */,
+				D8CD8C25F317DDDDB50B65BEB66A5B18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KUIPopOver;
+			productName = KUIPopOver;
+			productReference = 7C7684064F9ABF89901AB3A6EA12C279 /* KUIPopOver */;
+			productType = "com.apple.product-type.framework";
+		};
+		C7BBC4FECC6425D8F62713B607508CBB /* Pods-CVRecorderSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 184299864FD8D7BBA3B86F267162983E /* Build configuration list for PBXNativeTarget "Pods-CVRecorderSampleApp" */;
+			buildPhases = (
+				A80B25B218FED0AEEDD3E4343D6270ED /* Headers */,
+				E8DDC29BE231E781ADE3EE0A05316894 /* Sources */,
+				BD24421E6E0AE2019EFDE0C22A54E641 /* Frameworks */,
+				65B8C3D55DD0FA0F49445850411A0C72 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC977D62B92CA3FC8C0759A6E2A64AF1 /* PBXTargetDependency */,
+			);
+			name = "Pods-CVRecorderSampleApp";
+			productName = Pods_CVRecorderSampleApp;
+			productReference = BBBCFF577E8378B640C247BD3AC3F4EE /* Pods-CVRecorderSampleApp */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A19FBBA264504BCC1EC8FC530CFA67DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB0594AB3C9985EE48857D269BED2295 /* KUIPopOver */,
+				C7BBC4FECC6425D8F62713B607508CBB /* Pods-CVRecorderSampleApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65B8C3D55DD0FA0F49445850411A0C72 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8CD8C25F317DDDDB50B65BEB66A5B18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C17E1054320A9DF4393C65C42BAB1FFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B3A77250467DF903F2FEE47644CE89 /* KUIPopOver.swift in Sources */,
+				7B126566D8579DC0963AB4A4BE15B1DC /* KUIPopOver-dummy.m in Sources */,
+				D90B493FD9BC461A80E6AD8FC3536036 /* KUIPopOverUsable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8DDC29BE231E781ADE3EE0A05316894 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6256E23556444D7DAB8DF747FE81DBEF /* Pods-CVRecorderSampleApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC977D62B92CA3FC8C0759A6E2A64AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KUIPopOver;
+			target = AB0594AB3C9985EE48857D269BED2295 /* KUIPopOver */;
+			targetProxy = 97A7A5AAA2A506B7ED5D4E76D3B4E5FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0F49A121DF44153D631E21A891FE1553 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1DC4ED71E5BCA60645B9CE0CD735696 /* KUIPopOver.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KUIPopOver/KUIPopOver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KUIPopOver/KUIPopOver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KUIPopOver/KUIPopOver.modulemap";
+				PRODUCT_MODULE_NAME = KUIPopOver;
+				PRODUCT_NAME = KUIPopOver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4F0092950BFAC5E33D1564295CFCE471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEC478E5D284E7FEB1B01DB95BE83025 /* Pods-CVRecorderSampleApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8E4A06C42D1FF83E38D9C584E79D41BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E7D89BD73B8F45D23D29300602E3E8F /* Pods-CVRecorderSampleApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CVRecorderSampleApp/Pods-CVRecorderSampleApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92486E5E72E54FAF60E1A7D022C21B10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		934ED2B84836A780113D1F63484628B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9FAB8BB94ECA79437672A89B557CC9BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C8241E7221568A1ED3A64F98DDCC71F /* KUIPopOver.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KUIPopOver/KUIPopOver-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KUIPopOver/KUIPopOver-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KUIPopOver/KUIPopOver.modulemap";
+				PRODUCT_MODULE_NAME = KUIPopOver;
+				PRODUCT_NAME = KUIPopOver;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		184299864FD8D7BBA3B86F267162983E /* Build configuration list for PBXNativeTarget "Pods-CVRecorderSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F0092950BFAC5E33D1564295CFCE471 /* Debug */,
+				8E4A06C42D1FF83E38D9C584E79D41BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934ED2B84836A780113D1F63484628B2 /* Debug */,
+				92486E5E72E54FAF60E1A7D022C21B10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE76B095FF269B250639CEC8A632AA18 /* Build configuration list for PBXNativeTarget "KUIPopOver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FAB8BB94ECA79437672A89B557CC9BA /* Debug */,
+				0F49A121DF44153D631E21A891FE1553 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

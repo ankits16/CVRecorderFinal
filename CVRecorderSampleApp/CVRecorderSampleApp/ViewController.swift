@@ -8,6 +8,7 @@
 import UIKit
 import CVRecorder
 import AVFoundation
+import KUIPopOver
 
 class ViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet private weak var changeCamera : UIButton?
     @IBOutlet private weak var cameraPreviewContainer : UIView?
     @IBOutlet private weak var cvToggleButton : UIButton?
+    @IBOutlet private weak var menuButton : UIButton?
     
     // private ivars
     private lazy var captureStack : CVRecorder = CVRecorder(delegate: self)
@@ -171,8 +173,29 @@ extension ViewController: CVRecorderDelegate{
 }
 
 extension ViewController{
-    @IBAction func navigateToPlayerScreen(){
+    @IBAction private func menuButtonTapped(){
+       let menuVC = ExperimentsMenuViewController(nibName: "ExperimentsMenuViewController", bundle: nil)
+        menuVC.showPopover(sourceView: menuButton!)
+        menuVC.menuItemSelectedCompletion = {[weak self] selectedExperiment in
+            self?.handleSelectedExperiment(selectedExperiment)
+        }
+    }
+    
+    private func handleSelectedExperiment(_ selectedExperiment: Experiment){
+        switch selectedExperiment {
+        case .videoPlayer:
+            showPlayer()
+        case .audioTranscript:
+            showAudioTranscript()
+        }
+    }
+    
+    private func showPlayer(){
         let playerVc = VideoPlayerViewController(nibName: "VideoPlayerViewController", bundle: nil)
         self.navigationController?.pushViewController(playerVc, animated: true)
+    }
+    
+    private func showAudioTranscript(){
+        
     }
 }
