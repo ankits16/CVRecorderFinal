@@ -3,9 +3,9 @@ This repository showcase following things:-
 
 - [x] pause and resume video capture
 - [x] Object Detection with full yolo quantized models
-- [ ] Object Detection with custom yolo quantized models
+- [x] Object Detection with custom yolo quantized models
 - [ ] Code clean up: Proper state management
-- [ ] Concurrency Proper queue management
+- [x] Concurrency Proper queue management
 
 ![ScreenShot](https://github.com/ankits16/CVRecorderFinal/blob/main/sample%20images/IMG_3427.PNG)
 ![ScreenShot](https://github.com/ankits16/CVRecorderFinal/blob/main/sample%20images/IMG_3428.PNG)
