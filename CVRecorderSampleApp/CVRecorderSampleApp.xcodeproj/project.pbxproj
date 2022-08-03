@@ -20,6 +20,8 @@
 		BCBB9DF52897E21900EF5635 /* ExperimentsMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB9DF32897E21900EF5635 /* ExperimentsMenuViewController.xib */; };
 		BCBB9DF92897E44000EF5635 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB9DF72897E44000EF5635 /* MenuTableViewCell.swift */; };
 		BCBB9DFA2897E44000EF5635 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */; };
+		BCBB9E002897EB8800EF5635 /* SppecToTextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB9DFE2897EB8800EF5635 /* SppecToTextViewController.swift */; };
+		BCBB9E012897EB8800EF5635 /* SppecToTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBB9DFF2897EB8800EF5635 /* SppecToTextViewController.xib */; };
 		BCC3CFCB28509D1900633A5C /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */; };
 		BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */; };
 /* End PBXBuildFile section */
@@ -72,6 +74,8 @@
 		BCBB9DF32897E21900EF5635 /* ExperimentsMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExperimentsMenuViewController.xib; sourceTree = "<group>"; };
 		BCBB9DF72897E44000EF5635 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		BCBB9DFE2897EB8800EF5635 /* SppecToTextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SppecToTextViewController.swift; sourceTree = "<group>"; };
+		BCBB9DFF2897EB8800EF5635 /* SppecToTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SppecToTextViewController.xib; sourceTree = "<group>"; };
 		BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 		BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoPlayerViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,13 +123,13 @@
 		BC9B6E0C28221CD200A701C8 /* CVRecorderSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCBB9DFC2897E92D00EF5635 /* Audio  */,
+				BCBB9DFB2897E92000EF5635 /* Video Player */,
 				BCBB9DEF2897E20700EF5635 /* Menu */,
 				BC9B6E52282223C800A701C8 /* CVRecorder.xcodeproj */,
 				BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */,
 				BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */,
 				BC9B6E1128221CD200A701C8 /* ViewController.swift */,
-				BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */,
-				BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */,
 				BC9B6E1328221CD200A701C8 /* Main.storyboard */,
 				BC9B6E1628221CD400A701C8 /* Assets.xcassets */,
 				BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */,
@@ -168,6 +172,32 @@
 				BCBB9DF82897E44000EF5635 /* MenuTableViewCell.xib */,
 			);
 			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		BCBB9DFB2897E92000EF5635 /* Video Player */ = {
+			isa = PBXGroup;
+			children = (
+				BCC3CFC928509D1800633A5C /* VideoPlayerViewController.swift */,
+				BCC3CFCA28509D1800633A5C /* VideoPlayerViewController.xib */,
+			);
+			path = "Video Player";
+			sourceTree = "<group>";
+		};
+		BCBB9DFC2897E92D00EF5635 /* Audio  */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB9DFD2897E93600EF5635 /* Speech to Text */,
+			);
+			path = "Audio ";
+			sourceTree = "<group>";
+		};
+		BCBB9DFD2897E93600EF5635 /* Speech to Text */ = {
+			isa = PBXGroup;
+			children = (
+				BCBB9DFE2897EB8800EF5635 /* SppecToTextViewController.swift */,
+				BCBB9DFF2897EB8800EF5635 /* SppecToTextViewController.xib */,
+			);
+			path = "Speech to Text";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +287,7 @@
 				BCBB9DFA2897E44000EF5635 /* MenuTableViewCell.xib in Resources */,
 				BC9B6E1A28221CD400A701C8 /* LaunchScreen.storyboard in Resources */,
 				BCBB9DF52897E21900EF5635 /* ExperimentsMenuViewController.xib in Resources */,
+				BCBB9E012897EB8800EF5635 /* SppecToTextViewController.xib in Resources */,
 				BCC3CFCC28509D1900633A5C /* VideoPlayerViewController.xib in Resources */,
 				BC9B6E1728221CD400A701C8 /* Assets.xcassets in Resources */,
 				BC9B6E1528221CD200A701C8 /* Main.storyboard in Resources */,
@@ -318,6 +349,7 @@
 				BC9B6E0E28221CD200A701C8 /* AppDelegate.swift in Sources */,
 				BCBB9DF42897E21900EF5635 /* ExperimentsMenuViewController.swift in Sources */,
 				BC9B6E1028221CD200A701C8 /* SceneDelegate.swift in Sources */,
+				BCBB9E002897EB8800EF5635 /* SppecToTextViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

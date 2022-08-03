@@ -196,6 +196,7 @@ extension ViewController{
     }
     
     private func showAudioTranscript(){
-        
+        let speecToTextVc = SppecToTextViewController(nibName: "SppecToTextViewController", bundle: nil)
+        self.navigationController?.pushViewController(speecToTextVc, animated: true)
     }
 }
