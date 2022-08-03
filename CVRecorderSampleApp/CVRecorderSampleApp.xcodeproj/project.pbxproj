@@ -123,14 +123,13 @@
 		BC9B6E0C28221CD200A701C8 /* CVRecorderSampleApp */ = {
 			isa = PBXGroup;
 			children = (
+				BCBB9E02289A2E9400EF5635 /* Video Recorder */,
 				BCBB9DFC2897E92D00EF5635 /* Audio  */,
 				BCBB9DFB2897E92000EF5635 /* Video Player */,
 				BCBB9DEF2897E20700EF5635 /* Menu */,
 				BC9B6E52282223C800A701C8 /* CVRecorder.xcodeproj */,
 				BC9B6E0D28221CD200A701C8 /* AppDelegate.swift */,
 				BC9B6E0F28221CD200A701C8 /* SceneDelegate.swift */,
-				BC9B6E1128221CD200A701C8 /* ViewController.swift */,
-				BC9B6E1328221CD200A701C8 /* Main.storyboard */,
 				BC9B6E1628221CD400A701C8 /* Assets.xcassets */,
 				BC9B6E1828221CD400A701C8 /* LaunchScreen.storyboard */,
 				BC9B6E1B28221CD400A701C8 /* Info.plist */,
@@ -198,6 +197,15 @@
 				BCBB9DFF2897EB8800EF5635 /* SppecToTextViewController.xib */,
 			);
 			path = "Speech to Text";
+			sourceTree = "<group>";
+		};
+		BCBB9E02289A2E9400EF5635 /* Video Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				BC9B6E1128221CD200A701C8 /* ViewController.swift */,
+				BC9B6E1328221CD200A701C8 /* Main.storyboard */,
+			);
+			path = "Video Recorder";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

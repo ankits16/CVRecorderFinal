@@ -44,12 +44,42 @@
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yrd-aV-2M8">
                                         <rect key="frame" x="0.0" y="310.5" width="414" height="313.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="izb-HW-iqx">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="313.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="izb-HW-iqx" secondAttribute="trailing" id="BTf-Cy-Oof"/>
+                                            <constraint firstItem="izb-HW-iqx" firstAttribute="top" secondItem="yrd-aV-2M8" secondAttribute="top" id="BxY-JH-vwb"/>
+                                            <constraint firstAttribute="bottom" secondItem="izb-HW-iqx" secondAttribute="bottom" id="ieR-jk-YaL"/>
+                                            <constraint firstItem="izb-HW-iqx" firstAttribute="leading" secondItem="yrd-aV-2M8" secondAttribute="leading" id="vAZ-si-av8"/>
+                                        </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bzv-ad-I2w">
                                         <rect key="frame" x="0.0" y="624" width="414" height="50"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9D-AY-NGh">
+                                                <rect key="frame" x="350" y="0.0" width="54" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="54" id="KaR-4X-b6z"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="enableSTT"/>
+                                                <connections>
+                                                    <action selector="toggleSTT" destination="BYZ-38-t0r" eventType="touchUpInside" id="rU0-Xh-RFm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
+                                            <constraint firstItem="l9D-AY-NGh" firstAttribute="top" secondItem="bzv-ad-I2w" secondAttribute="top" id="J6l-gl-LDc"/>
+                                            <constraint firstAttribute="trailing" secondItem="l9D-AY-NGh" secondAttribute="trailing" constant="10" id="OIQ-x0-tB6"/>
+                                            <constraint firstAttribute="bottom" secondItem="l9D-AY-NGh" secondAttribute="bottom" id="gNq-vQ-esd"/>
                                             <constraint firstAttribute="height" constant="50" id="mtw-5O-JiA"/>
                                         </constraints>
                                     </view>
@@ -190,7 +220,9 @@
                         <outlet property="cameraPreviewContainer" destination="JWk-Ip-Ri1" id="D6d-0C-xA1"/>
                         <outlet property="changeCamera" destination="ZF5-dQ-jOW" id="vPi-Fn-ZEj"/>
                         <outlet property="cvToggleButton" destination="4mB-Yj-dhC" id="yNd-rL-w7R"/>
+                        <outlet property="lblText" destination="izb-HW-iqx" id="7dA-g6-LWj"/>
                         <outlet property="menuButton" destination="WZP-aL-SP0" id="12o-5A-3fo"/>
+                        <outlet property="sttButton" destination="l9D-AY-NGh" id="Wy8-9H-Qfd"/>
                         <outlet property="togglePauseResumeButton" destination="tBZ-ob-6pX" id="JWZ-p6-LhP"/>
                         <outlet property="toggleRecordingButton" destination="axa-3Y-KqH" id="oB1-VT-msy"/>
                     </connections>
@@ -202,6 +234,7 @@
     </scenes>
     <resources>
         <image name="close" width="70" height="30"/>
+        <image name="enableSTT" width="30" height="30"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -87,7 +87,7 @@ class VideoEncoder {
         
         if isVideo{
             if (_videoInput.isReadyForMoreMediaData == true){
-                debugPrint("<<<<<<<<<<<<<<  _videoInput.append(sampleBuffer)")
+//                debugPrint("<<<<<<<<<<<<<<  _videoInput.append(sampleBuffer)")
                 _videoInput.append(sampleBuffer)
                 return true
             }
